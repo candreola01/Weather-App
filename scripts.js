@@ -8,7 +8,10 @@ window.addEventListener('load', ()=>{
     //Accessing geolocation of user
     if (navigator.geolaction) {
         navigator.geolocation.getCurrentPosition((position)={
-
+            //storing longitude and latitude in variables
+            long = position.coords.longitude;
+            lat = position.coords.latitude;
         });
     }
 });
+
