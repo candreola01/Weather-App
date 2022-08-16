@@ -30,3 +30,9 @@ body {
     margin: 15px 0;
     font-size; 1.5rem;
 }
+
+#location {
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+}
