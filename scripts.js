@@ -11,6 +11,7 @@ window.addEventListener('load', ()=>{
             //storing longitude and latitude in variables
             long = position.coords.longitude;
             lat = position.coords.latitude;
+            const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=metric`
         });
     }
 });
