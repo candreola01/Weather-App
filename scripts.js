@@ -1,6 +1,14 @@
 // OpenWeatherMap API. Do not share it publicly.
 const api = '48742a43ee247a11bbc2c81076054696';
 
+const iconImg = document.getElementById('weather-icon');
+const loc = document.querySelector('#location');
+const tempC = document.querySelector('.c');
+const tempF = document.querySelector('.f');
+const desc = document.querySelector('.desc');
+const sunriseDOM = document.querySelector('.sunrise');
+const sunsetDOM = document.querySelector('.sunset');
+
 //event listner that runs every time the page is loaded
 window.addEventListener('load', ()=>{
     let long; //longitude
@@ -31,6 +39,15 @@ window.addEventListener('load', ()=>{
                 //converting epoch(unix) time to GMT
                 const sunriseGMT = new Date(sunrise * 1000);
                 const sunsetGMT = new Date(sunset * 1000);
+
+                //Interacting with DOM to show data
+                iconImg.src = iconUrl;
+                loc.textContent = `${place}`;
+                desc.textContent = `${description}`;
+                tempC.textContent = `${temp.toFixed(2)} °C`;
+                tempF.textContent = `${fahrenheit.toFixed(2)} °F`;
+                sunriseDOM.textContent = `${sunsetGMT.toLocaleDateString()},
+                ${sunsetGMT.toLocaleTimeString()}`;
             });
         });
     }
