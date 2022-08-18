@@ -20,6 +20,10 @@ body {
     margin: 1em;
 }
 
+h1.temp {
+    margin: 0;
+}
+
 .search {
     display: flex;
     align-items: center;
