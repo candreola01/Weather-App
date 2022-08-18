@@ -33,3 +33,8 @@ button {
     height: 2.5em;
     width: 2.5em;
 }
+
+input.search-bar {
+    border: none;
+    outline: none;
+}
