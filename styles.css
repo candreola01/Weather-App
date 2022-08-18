@@ -60,7 +60,9 @@ h1.temp {
     margin: 0;
 }
 
-.icon {
+.flex {
+    display: flex;
+    align-items: center;
     
 }
 
