@@ -37,6 +37,12 @@ button {
     color: white;
 }
 
+button:hover {
+    background: #7c7c7c6b;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
 input.search-bar {
     border: none;
     outline: none;
